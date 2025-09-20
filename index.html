@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drawer Page</title>
-    <link rel="stylesheet" href="./drawer.css" />
+    <title>Drawer-Page-2</title>
+    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="dashboard">
-      <button>Open Drawer</button>
+      <button>Open drawer</button>
     </div>
 
     <form
@@ -24,8 +24,11 @@
       <div class="top-drawer-container">
         <div class="blue-content-container">
           <div class="new-project-and-icon-cont">
-            <p id="drawer-title">New Project</p>
-            <span class="material-symbols-outlined"> close </span>
+            <h1 id="drawer-title">New project</h1>
+
+            <a href="#">
+              <span class="material-symbols-outlined"> close </span>
+            </a>
           </div>
 
           <div class="blue-paragraph-container">
@@ -39,12 +42,7 @@
         <div class="input-groups-container">
           <div class="input-group">
             <label for="project-name">Project name</label>
-            <input
-              type="text"
-              id="project-name"
-              name="project-name"
-              autofocus
-            />
+            <input type="text" id="project-name" name="project-name" />
           </div>
 
           <div class="input-group">
@@ -59,13 +57,40 @@
               <p>Team Members</p>
             </div>
 
-            <div class="teams-avatar's-container">
-              <div class="avatar">#</div>
-              <div class="avatar">#</div>
-              <div class="avatar">#</div>
-              <div class="avatar">#</div>
-              <div class="avatar">#</div>
-              <div class="avatar-icon">#</div>
+            <div class="teams-avatars-container">
+              <a href="#" class="avatar-link">
+                <div class="avatar">
+                  <img src="./Images/avatar.png" alt="Image of a man" />
+                </div>
+              </a>
+
+              <a href="#" class="avatar-link">
+                <div class="avatar">
+                  <img src="./Images/avatar-2.jpg" alt="Image" />
+                </div>
+              </a>
+
+              <a href="#" class="avatar-link">
+                <div class="avatar">
+                  <img src="./Images/avatar-3.jpg" alt="Image" />
+                </div>
+              </a>
+
+              <a href="#" class="avatar-link">
+                <div class="avatar">
+                  <img src="./Images/avatar-4.jpg" alt="Image" />
+                </div>
+              </a>
+
+              <a href="#" class="avatar-link">
+                <div class="avatar">
+                  <img src="./Images/avatar-5.jpg" alt="Image" />
+                </div>
+              </a>
+
+              <div class="avatar-icon">
+                <p>+</p>
+              </div>
             </div>
           </div>
 
@@ -74,59 +99,81 @@
               <p>Privacy</p>
             </div>
 
-            <div class="radio-input-group">
-              <input
-                type="radio"
-                name="privacy"
-                id="public-access"
-                value="public-access"
-              />
-              <label for="public-access">Public Access</label>
-              <p>Everyone with the link will see this project.</p>
+            <div class="radio-input-and-text">
+              <div class="radio-input-group">
+                <input
+                  type="radio"
+                  name="privacy"
+                  id="public-access"
+                  value="public-access"
+                />
+                <label for="public-access">Public Access</label>
+              </div>
+
+              <div class="input-text">
+                <p>Everyone with the link will see this project.</p>
+              </div>
             </div>
 
-            <div class="radio-input-group">
-              <input
-                type="radio"
-                name="privacy"
-                id="project-members"
-                value="project-members"
-              />
-              <label for="project-members">Private to project members</label>
-              <p>Only members of this project would be able to access.</p>
+            <div class="radio-input-and-text">
+              <div class="radio-input-group">
+                <input
+                  type="radio"
+                  name="privacy"
+                  id="project-members"
+                  value="project-members"
+                />
+                <label for="project-members">Private to project members</label>
+              </div>
+
+              <div class="input-text">
+                <p>Only members of this project would be able to access.</p>
+              </div>
             </div>
 
-            <div class="radio-input-group">
-              <input
-                type="radio"
-                name="privacy"
-                id="private-access"
-                value="private-access"
-              />
-              <label for="private-access">Private to you</label>
-              <p>You are the only one able to access this project.</p>
+            <div class="radio-input-and-text">
+              <div class="radio-input-group">
+                <input
+                  type="radio"
+                  name="privacy"
+                  id="private-access"
+                  value="private-access"
+                />
+                <label for="private-access">Private to you</label>
+              </div>
+
+              <div class="input-text">
+                <p>You are the only one able to access this project.</p>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="share-container">
+        <div class="share-learnmore-container">
+          <a href="#" class="share-link">
             <div class="share-link-container">
-              <span class="material-symbols-outlined"> add_link </span>
+              <span class="material-symbols-outlined"> attach_file_add </span>
 
               <p>Copy link</p>
             </div>
+          </a>
 
-            <div class="learn-more-container">
+          <a href="#" class="learnmore-link">
+            <div class="learnmore-link-container">
               <span class="material-symbols-outlined"> help </span>
 
               <p>Learn more about sharing</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
       <div class="bottom-drawer-container">
-        <div class="cancel-and-save-container">
+        <div class="cancel-container">
           <button>Cancel</button>
+        </div>
+
+        <div class="save-container">
           <button>Save</button>
         </div>
       </div>
